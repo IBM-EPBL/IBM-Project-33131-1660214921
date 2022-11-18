@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lets Predict</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background:linear-gradient(#4568dc,#b06ab3);
+  text-align: center;
+  height:125vh;
+width:99vw;
+}
+.header{
+height:100px;
+}
+.topnav {
+  background-color: #006600;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  opacity:0.9;
+color:black;
+}
+.topnav a.split {
+  float: right;
+padding: 14px 16px;
+text-align: center;
+  color: white;
+}
+.topnav a.split:hover {
+  opacity:0.9;
+color:black;
+}
+.main{
+text-align: center;
+width: 350px;
+border:2px solid white;
+border-radius:2%;
+transform: translateX(50%);
+transform: translateY(50%);
+height:250px;
+color:white;
+font-size:25px;
+} 
+ button:hover {   
+        opacity: 0.7;   
+}
+button{
+background-color: green;   
+width: 25%;  
+color: white;   
+padding: 10px 10px;   
+margin: 10px 0px;   
+border: none;   
+cursor: pointer;
+border-radius:4px;
+}
+.cancelbtn {   
+ width: 80%;   
+ padding: 10px 18px;  
+ margin: 10px 5px;  
+ }  
+.footer {
+left: 5px;  
+bottom: 10px;  
+right: 10px;   
+width: 99%;
+  padding: 10px;
+  text-align: center;
+position:fixed;
+color: white;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Vehicle Damage Detection</h1>
+</div>
+<div class="topnav">
+ <a href="Index.html">Home</a>
+  <a href="login.html">Login</a>
+<a href="#">Prediction</a>
+<a href="logout.html" class="split">Logout</a>
+</div>
+<div class="main">
+<form action="/action_page.php">
+  <label for="myfile">Select files:</label>
+  <input type="file" id="myfile" name="myfile" multiple>
+  <button type="submit"class="button">Submit</button>
+<button type="button" class="cancelbtn"> Cancel</button>
+<p style="font-size:17px">Estimated damage cost<p><br>
+<output name="x" for="prediction"></output>
+</form>
+</div>  
+ </body>
+</html>
