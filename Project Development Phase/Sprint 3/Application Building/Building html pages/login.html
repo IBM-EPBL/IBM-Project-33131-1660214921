@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background:linear-gradient(#4568dc,#b06ab3);
+  text-align: center;
+  height:125vh;
+width:98vw;
+}
+.header{
+text-align:center;
+height:50px;
+}
+.topnav {
+  background-color: #006600;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: linear-gradient(#4568dc,#b06ab3);
+  color: black;
+}
+table{
+  float: left;
+  width: 40%;
+  padding: 5px;
+  height: 50%;
+text-align: center;
+color: black;
+background-color: white;
+border: 3px solid white;
+border-radius:5px;
+  position: absolute;
+  top: 20%;
+  left:25%;
+}
+input[type=text], input[type=password] {   
+ width: 80%;   
+ margin: 8px 0;  
+ padding: 10px 10px;   
+ display: inline-block;   
+ border: 2px solid dodgerblue;   
+ box-sizing: border-box; 
+ border-radius:4px;  
+}  
+ button:hover {   
+        opacity: 0.7;   
+}
+button{
+background-color: dodgerblue;   
+width: 80%;  
+color: white;   
+padding: 10px 10px;   
+margin: 10px 0px;   
+border: none;   
+cursor: pointer;
+border-radius:4px;
+}
+.cancelbtn {   
+ width: auto;   
+ padding: 10px 18px;  
+ margin: 10px 5px;  
+ }
+  @media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+  }
+.footer {
+left: 5px;  
+bottom: 10px;  
+right: 10px;   
+width: 99%;
+  padding: 10px;
+  text-align: center;
+position:fixed;
+color: white;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h2>     Login Page</h2>
+</div>
+<div class="topnav">
+<a href="Index.html"class="split">Home</a>
+<a href="login.html"class="split">Login</a>
+<a href="prediction.html"class="split">Prediction</a>
+</div>
+<!--<div class="row">
+<div class="main 1">-->
+  <table>
+    <tr><td>
+<img src="login_avatar1.png" style="width:25%" alt="Avatar">
+ <form class="container">    
+ <input type="text" placeholder="Enter Register Email ID" name="username" required><br>   
+ <input type="password" placeholder="Enter Password"name="password" required><br>
+ <button type="submit" class="button">Login</button><br>
+ <button type="button" class="cancelbtn"> Cancel</button>   
+ <a href="#">Forgot password? </a> <br> <p>or</p>
+<p>New User!  <a href="signup.html">Let's Create Account</a></p>
+<!--<button type="submit" class="signupbtn">Sign Up</button>  
+ <button onclick="history.back()">❮ Back</button> -->    
+  </form></td>
+ <!-- </div>
+<div class="main 2">-->
+ <td><a href="prediction.html"><img src="getstart.jpg" alt="Car Image" style="width:250px;height:300px;"></a></td></tr>
+ <!-- </div>
+</div>-->
+<div class="footer">
+<p>copyright © 2022. All Rights Reserved</p> 
+</div>   
+</body>
+</html> 
